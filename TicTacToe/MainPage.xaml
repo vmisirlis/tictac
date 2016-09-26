@@ -1,0 +1,54 @@
+﻿<Page
+    x:Class="TicTacToe.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TicTacToe"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource LoopingSelectorSelectionBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+
+
+        </Grid.ColumnDefinitions>
+        <!-- for new game!-->
+        <Button x:Name="new_game" Content="New Game" HorizontalAlignment="Center"  VerticalAlignment="Top" Grid.Row="0" Grid.Column="1" Margin="0,20,0,0" Click="new_game_Click" />
+        <!-- for new game!-->
+        <!-- Row A -->
+        <Button x:Name="A1" Content="" HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <Button x:Name="A2" Content=""  HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="1" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <Button x:Name="A3" Content=""  HorizontalAlignment="Center"  Grid.Row="1" Grid.Column="2" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <!-- Row A -->
+
+        <!-- Row B -->
+        <Button x:Name="B1" Content="" HorizontalAlignment="Center"  Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <Button x:Name="B2" Content=""  HorizontalAlignment="Center"  Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <Button x:Name="B3" Content=""  HorizontalAlignment="Center"  Grid.Row="2" Grid.Column="2" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <!-- Row B -->
+
+        <!-- Row C -->
+        <Button x:Name="C1" Content="" HorizontalAlignment="Center"  Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <Button x:Name="C2" Content=""  HorizontalAlignment="Center"  Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <Button x:Name="C3" Content=""  HorizontalAlignment="Center"  Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Width="63" Height="63" Click="button_click"/>
+        <!-- Row C -->
+
+
+        <TextBlock x:Name="textBlock" Grid.Column="1" Margin="0,0,0,7" Grid.Row="4" TextWrapping="Wrap" Text="" HorizontalAlignment="center" VerticalAlignment="Top"/>
+        
+
+    </Grid>
+</Page>
